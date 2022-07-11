@@ -1,9 +1,11 @@
-import express from 'express'
+import express from "express";
 
-const app = express()
+import { categoriesRoutes } from "./routes/categories.routes";
 
-app.get("/", (request, response) => {
-    return response.json({ message: "Hello world" })
-})
+const app = express();
 
-app.listen(5500, () => console.log("Server is on!"))
+app.use(express.json());
+
+app.use("/categories", categoriesRoutes);
+
+app.listen(5500, () => console.log("Server is on!"));
