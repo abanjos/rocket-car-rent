@@ -8,7 +8,7 @@ class UpdateUserAvatarController {
         const { id } = request.user;
 
         // receive file
-        const avatar_file = null;
+        const avatar_file = request.file.filename;
 
         const updateUserAvatarUseCase = container.resolve(
             UpdateUserAvatarUseCase
