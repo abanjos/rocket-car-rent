@@ -7,9 +7,8 @@ Deve ser possível listar todas as categorias.
 
 **RN**
 Não deve ser possível cadastrar um carro com uma placa jáe xistente.
-Não deve ser possível alterar a placa de um carro.
 O carro deve ser cadastrado, por padrão, com disponibilidade.
-Somente usuário administrador pode cadastrar os carros.
+*Somente usuário administrador pode cadastrar os carros.
 
 # Listagem de carros
 
